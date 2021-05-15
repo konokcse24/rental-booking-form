@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        .main{
+            width: 60%;
+            height: auto;
+            margin: 0 auto;
+            font-family: sans-serif;
+            border: 1px solid #F7F7F7;
+            background-color: #F7F7F7;
+        }
+        h1{
+            text-align: center;
+            padding-top: 15px;
+        }
+        .label{
+            width: 100%;
+            height: 25px;
+            padding-top: 8px;
+            border: 1px solid black;
+            text-align: center;
+            color: white;
+            background-color: #6699CC;
+        }
+        img{
+            height: 90px;
+            width: 200px;
+            padding-top: 5px;
+            padding-left: 15px;
+        }
+        
+        table{
+            width: 100%;
+            padding-left: 15px;
+        }
+        p{
+            padding-right: 5px;
+            text-align: right;
+            font-size: 12px;            
+        }
+        .btnholder{
+            text-align: center;
+        }
+        .btn{
+            
+            border: 3px solid black;
+            font-weight: bold;
+            border-radius: 7px;
+            background-color: #6699CC;
+        }
+        
+    </style>
+</head>
+<body>
+    <form action="">
+        <div class="main">
+            <label for="Header"><h1>Rental Booking Form (Car)</h1></label>
+
+            <div class="label">Customer E-Mail</div>
+            <div>
+                <table class="table">
+                    <tr>
+                        <td colspan="2" >Important Enter a valid e-mail address. Recceipts will be sent to this address.</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 33%;">E-Mail:</td>
+                        <td><input type="email"></td>
+                        
+                    </tr>
+
+                </table>
+            </div>
+
+            <div class="label">Vehicle Rental details</div>
+            <div class="rentail_details">
+                <img src="car.jpg" alt="Car Photo">
+                <table>
+                    <tr>
+                        <td>Vehicle Rental Selection:</td>
+                        <td colspan="2">
+                            <select name="car" id="car">
+                                <option value="car">Select a Vehicle Rental</option>
+                                <option value="car1">Car 1</option>
+                                <option value="car2">car 2</option>
+                                <option value="car3">car 3</option>
+                                <option value="car4">car 4</option>
+                                <option value="car5">car 5</option>
+                            </select>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>From (Start From City):</td>
+                        <td><input type="text"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>To(Final Destiantion):</td>
+                        <td><input type="text"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Date of Pickup:</td>
+                        <td><input type="date"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Pickup Time:</td>
+                        <td><input type="time"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Date of Return:</td>
+                        <td><input type="date"></td>
+                        <td>mm/dd/yyyy</td>
+                    </tr>
+                    <tr>
+                        <td>Return Time:*</td>
+                        <td><input type="time"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Driver Required?</td>
+                        <td>
+                            <input type="radio" name="driver">Yes
+                            <input type="radio" name="driver">No
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr><td rowspan="">Insurance:</td>
+                        <td>
+                            <input type="radio" name="ins">None <br>
+                            <input type="radio" name="ins">Collision Damage Waiver (CDW) <br>
+                            <input type="radio" name="ins">Liability Insurance  <br>
+                            <input type="radio" name="ins">Personal Accident Insurance <br>
+                            <input type="radio" name="ins">Personal Effects Coverage <br>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="label">Billing Information</div>
+            <div>
+                <table> 
+                    <tr>
+                        <td style="width: 35%;">First Name:*</td>
+                        <td><input type="text"></td>
+                        <td rowspan="2"><p>Same name <br> as on your <br> card</p> </td>
+                    </tr>
+
+                    <tr>
+                        <td>Middle Initial:</td>
+                        <td><input type="text"></td>
+                        
+                    </tr>
+
+                    <tr>
+                        <td>Last Name:*</td>
+                        <td><input type="text"></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>Address Line 1:*</td>
+                        <td><input type="text"></td>
+                        <td rowspan=""><p>Where your <br> statement is <br> mailed </p></td>
+                    </tr>
+
+                    <tr>
+                        <td>Address Line 2:*</td>
+                        <td><input type="text"></td>
+                        <td><p>Apt. or Suite <br> No.</p></td>
+                    </tr>
+
+                    <tr>
+                        <td>City:*</td>
+                        <td><input type="text"></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>State:*</td>
+                        <td><input type="text"></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>Province:</td>
+                        <td><input type="text"></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>Country:*</td>
+                        <td>
+                            <select name="country" id="#" style="width: 176px;">
+                                <option value="">Select Country:</option>
+                                <option value="bd">Bangladesh</option>
+                                <option value="ind">India</option>
+                                <option value="pk">Pakistan</option>
+                                <option value="Aus">Australia</option>
+                            </select>
+                        </td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>Zip Code:*</td>
+                        <td><input type="number"></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>Phone:</td>
+                        <td><input type="number"></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div><br>
+
+            <div class="label">Credit/Debit Card Information</div>
+            <div>
+                <table>
+                    <tr>
+                        <td style="width: 35%;">Card Number:*</td>
+                        <td><input type="number"></td>
+                        <td><p>No dashes or speace please</p></td>
+                    </tr>
+
+                    <tr>
+                        <td>Expiration Month:*</td>
+                        <td>
+                            <select name="month" style="width: 176px;">
+                                <option value="">Month</option>
+                                <option value="">January</option>
+                                <option value="">February</option>
+                                <option value="">March</option>
+                                <option value="">April</option>
+                                <option value="">May</option>
+                                <option value="">June</option>
+                                <option value="">July</option>
+                                <option value="">August</option>
+                                <option value="">September</option>
+                                <option value="">October</option>
+                                <option value="">NOvember</option>
+                                <option value="">December</option>
+                            </select>
+                        </td>
+                        <td><p>From Card</p></td>
+                    </tr>
+
+                    <tr>
+                        <td>Expiration Year:*</td>
+                        <td>
+                            <select name="year" style="width: 176px;">
+                                <option value="">Year</option>
+                                <option value="">2021</option>
+                                <option value="">2022</option>
+                                <option value="">2023</option>
+                                <option value="">2024</option>
+                                <option value="">2025</option>
+                                <option value="">2026</option>
+                            </select>
+                        </td>
+                        <td><p>From Card</p></td>
+                    </tr>
+
+                    <tr>
+                        <td>Card Brand:*</td>
+                        <td>
+                            <select name="card" style="width: 176px;">
+                                <option value="" >Choose a Card</option>
+                                <option value="">Credit Card</option>
+                                <option value="">Debit Card</option>
+                                <option value="">Visa Card</option>
+                            </select>
+                        </td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div><br><br>
+
+            <div class="btnholder">
+                <input type="reset" name="reset" value="Reset" class="btn">
+                <input type="submit" name="submit" value="Submit" class="btn">
+            </div>   
+        </div>
+        
+</form>
+</body>
+</html>
